@@ -2,7 +2,6 @@
 
 <meta>
     <info name="White House Door Fix" description="Removes non working doors and replaces it with working doors." author="LIKE_A_GUEST" version="1.0" shadowcopy="true" />
-
     <script src="Main.cs" type="server" lang="csharp" />
     <script src="ObjectRemover.cs" type="server" lang="csharp" />
     <script src="DoorCreator.cs" type="server" lang="csharp" />
