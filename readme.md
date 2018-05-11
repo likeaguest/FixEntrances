@@ -23,4 +23,4 @@ This may not compatible with every resource setup.
 
 ## License
 
-This project is licensed under the WTFPL License - see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the WTFPL License - see the [license.md](license.md) file for details.
