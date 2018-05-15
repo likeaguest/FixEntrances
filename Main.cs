@@ -30,7 +30,6 @@ namespace DoorFix {
 
             foreach (Client player in API.getAllPlayers()) {
                 if (player.position.DistanceTo2D(remover.location) <= 25f) {
-					API.shared.delay(200, true, () => API.shared.sendNativeToPlayer(player, 0xF82D8F1926A02C3D, model, location.X, location.Y, location.Z, false, 0f, false));
                     API.shared.deleteObject(player, remover.location, remover.model, remover.radius);
                 }
             }
