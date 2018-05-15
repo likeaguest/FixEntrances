@@ -23,7 +23,6 @@ namespace DoorFix {
 
         public void CreateColShape() {
             triggerColShape = API.shared.createSphereColShape(location, 10f);
-            API.shared.createObject(model, location, rotation);
             triggerColShape.onEntityEnterColShape += (shape, entityHandle) => {
                 Client player = API.shared.getPlayerFromHandle(entityHandle);
                 if (player == null) {
