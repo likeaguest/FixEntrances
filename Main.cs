@@ -11,6 +11,7 @@ namespace DoorFix {
         DoorCreator door;
         DoorCreator gate;
 
+
         public DoorFix() {
             API.onResourceStart += FixDoors;
             API.onResourceStop += Reset;
@@ -27,8 +28,6 @@ namespace DoorFix {
             foreach (Client player in API.getAllPlayers()) {
                 if (player.position.DistanceTo2D(remover.location) <= 25f) {
                     API.shared.deleteObject(player, remover.location, remover.model, remover.radius);
-                    API.shared.createObject(door.model, door.location, door.rotation);
-                    API.shared.createObject(gate.model, gate.location, gate.rotation);
                 }
             }
         }
